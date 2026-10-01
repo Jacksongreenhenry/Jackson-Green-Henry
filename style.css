@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Jackson Green Henry — Phase 1
+   Jackson Green Henry, Phase 1
    Light neumorphic system, matched to the STUDCOM surface language.
    White pearl field, dual shadows, crimson accent.
    Motion mounts: [data-scene-mount], [data-motion]
@@ -210,6 +210,10 @@ h3 {
 .lede {
     max-width: 38rem;
     color: var(--text-soft);
+}
+
+.lede.furrow {
+    margin-top: 1rem;
 }
 
 .section {
@@ -550,7 +554,16 @@ h3 {
     box-shadow: var(--shadow-inset);
 }
 
-.about__copy p + p {
+.furrow {
+    padding: 1rem 1.05rem;
+    border-radius: 14px;
+    background: var(--bg);
+    box-shadow: var(--shadow-inset);
+    color: var(--text-soft);
+}
+
+.about__text p + p,
+.furrow p + p {
     margin-top: 1rem;
 }
 
@@ -590,21 +603,21 @@ h3 {
 .capability-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.9rem;
+    gap: 1.35rem 1.1rem;
+    align-items: start;
 }
 
 .capability {
-    padding: 1.25rem 1.15rem 1.2rem;
-    border-radius: var(--radius-md);
-    background: var(--bg);
-    border: 0;
-    box-shadow: var(--shadow-raised);
+    display: grid;
+    gap: 0.55rem;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
 }
 
-.capability p {
-    margin-top: 0.45rem;
+.capability .furrow {
+    margin: 0;
     font-size: 0.98rem;
-    color: var(--text-soft);
 }
 
 /* Projects ---------------------------------------------------------------- */
@@ -695,8 +708,12 @@ h3 {
     font-size: 0.98rem;
 }
 
-.project__body p + p {
+.project__body .furrow p + p {
     margin-top: 0.7rem;
+}
+
+.project__link {
+    margin-top: 0.9rem;
 }
 
 .project__facts {
@@ -795,14 +812,13 @@ h3 {
 
 .record__education {
     margin-top: 1.35rem;
-    padding: 1.15rem 1rem;
-    border-radius: var(--radius-md);
-    background: var(--surface-inset);
-    box-shadow: var(--shadow-press);
+    padding: 0;
+    background: none;
+    box-shadow: none;
 }
 
 .record__education h3 {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.65rem;
 }
 
 .record__education .eyebrow {
@@ -882,14 +898,15 @@ h3 {
 
 .contact__list li {
     display: grid;
-    grid-template-columns: 5.5rem minmax(0, 1fr);
-    gap: 0.75rem;
-    align-items: center;
-    min-height: 3.25rem;
-    padding: 0.55rem 0.9rem;
-    border-radius: var(--radius-md);
-    background: var(--surface-inset);
-    box-shadow: var(--shadow-press);
+    gap: 0.4rem;
+}
+
+.contact__list .button {
+    width: 100%;
+}
+
+.contact__list .furrow {
+    margin: 0;
 }
 
 .contact__list span:first-child {
@@ -973,14 +990,29 @@ h3 {
     right: 1.1rem;
     bottom: 1.1rem;
     z-index: 30;
-    min-height: 44px;
-    padding: 0.65rem 0.9rem;
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
     border-radius: 999px;
     border: 0;
     background: var(--bg);
     color: var(--text);
     box-shadow: var(--shadow-raised);
     cursor: pointer;
+    transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), color 0.25s var(--ease);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .to-top:hover {
+        transform: translateY(-2px);
+        color: var(--accent);
+    }
+}
+
+.to-top:active {
+    transform: translateY(0);
 }
 
 .to-top[hidden],

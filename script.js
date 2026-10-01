@@ -198,7 +198,7 @@
         }
 
         const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
-        const body = encodeURIComponent(`${message}\n\n— ${name}\n${email}`);
+        const body = encodeURIComponent(`${message}\n\n${name}\n${email}`);
         if (formStatus) formStatus.textContent = "Opening your email app.";
         window.location.href = `mailto:jacksongreenh@gmail.com?subject=${subject}&body=${body}`;
     });
