@@ -1,36 +1,39 @@
 /* ==========================================================================
    Jackson Green Henry — Phase 1
-   Neo-industrial neumorphic system.
+   Light neumorphic system, matched to the STUDCOM surface language.
+   White pearl field, dual shadows, crimson accent.
    Motion mounts: [data-scene-mount], [data-motion]
    ========================================================================== */
 
 :root {
-    --bg: #14161a;
-    --bg-elev: #191c22;
-    --surface: #1c2027;
-    --surface-raised: #232830;
-    --surface-inset: #101216;
-    --text: #f4f1ea;
-    --text-soft: #c5cbd4;
-    --text-muted: #9aa3b0;
-    --accent: #d7b07a;
-    --accent-strong: #e4c48a;
-    --steel: #8aa4b5;
-    --line: rgba(244, 241, 234, 0.1);
-    --line-strong: rgba(244, 241, 234, 0.16);
-    --ink: #1a140c;
+    --bg: #e8eef5;
+    --bg-elev: #f5f9ff;
+    --surface: #e8eef5;
+    --surface-raised: #e8eef5;
+    --surface-inset: #e8eef5;
+    --text: #2d3748;
+    --text-soft: #4a5568;
+    --text-muted: #5c6b7e;
+    --accent: #c4123a;
+    --accent-strong: #a10e30;
+    --accent-soft: rgba(196, 18, 58, 0.12);
+    --steel: #5c6b7e;
+    --line: rgba(90, 103, 120, 0.16);
+    --line-strong: rgba(90, 103, 120, 0.22);
+    --shadow-dark: #b8c0cc;
+    --shadow-light: #ffffff;
     --shadow-raised:
-        10px 12px 24px rgba(0, 0, 0, 0.42),
-        -7px -7px 16px rgba(255, 255, 255, 0.035);
+        8px 8px 16px var(--shadow-dark),
+        -8px -8px 16px var(--shadow-light);
     --shadow-raised-hover:
-        16px 18px 32px rgba(0, 0, 0, 0.48),
-        -8px -8px 18px rgba(255, 255, 255, 0.05);
+        10px 10px 20px var(--shadow-dark),
+        -8px -8px 16px var(--shadow-light);
     --shadow-inset:
-        inset 5px 5px 12px rgba(0, 0, 0, 0.45),
-        inset -3px -3px 8px rgba(255, 255, 255, 0.035);
+        inset 5px 5px 10px var(--shadow-dark),
+        inset -5px -5px 10px var(--shadow-light);
     --shadow-press:
-        inset 3px 3px 8px rgba(0, 0, 0, 0.4),
-        inset -2px -2px 6px rgba(255, 255, 255, 0.03);
+        inset 3px 3px 6px var(--shadow-dark),
+        inset -3px -3px 6px var(--shadow-light);
     --radius-sm: 10px;
     --radius-md: 16px;
     --radius-lg: 22px;
@@ -40,7 +43,7 @@
     --font-body: "Outfit", sans-serif;
     --font-mono: "JetBrains Mono", ui-monospace, monospace;
     --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
-    color-scheme: dark;
+    color-scheme: light;
 }
 
 *,
@@ -62,10 +65,7 @@ body {
     font-weight: 400;
     line-height: 1.65;
     color: var(--text-soft);
-    background:
-        radial-gradient(1100px 620px at 8% -8%, rgba(255, 255, 255, 0.05), transparent 55%),
-        radial-gradient(800px 480px at 100% 0%, rgba(215, 176, 122, 0.06), transparent 42%),
-        var(--bg);
+    background: var(--bg);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     overflow-x: clip;
@@ -109,7 +109,7 @@ ol {
 }
 
 ::selection {
-    background: rgba(215, 176, 122, 0.35);
+    background: rgba(196, 18, 58, 0.18);
     color: var(--text);
 }
 
@@ -118,11 +118,11 @@ ol {
 }
 
 ::-webkit-scrollbar-track {
-    background: #101216;
+    background: var(--bg);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #3a414c;
+    background: #c5ced8;
     border-radius: 99px;
 }
 
@@ -146,7 +146,7 @@ ol {
     transform: translateY(-120%);
     padding: 0.7rem 1rem;
     background: var(--accent);
-    color: var(--ink);
+    color: #fff;
     border-radius: var(--radius-sm);
     text-decoration: none;
 }
@@ -238,10 +238,8 @@ h3 {
 }
 
 .panel {
-    background:
-        linear-gradient(165deg, rgba(255, 255, 255, 0.045), transparent 42%),
-        var(--surface);
-    border: 1px solid var(--line);
+    background: var(--bg);
+    border: 0;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-raised);
 }
@@ -263,15 +261,19 @@ h3 {
 }
 
 .button--primary {
-    background: linear-gradient(180deg, #e3c392, var(--accent));
-    color: var(--ink);
-    box-shadow: var(--shadow-raised);
+    background: var(--accent);
+    color: #fff;
+    border-radius: 14px;
+    box-shadow:
+        6px 6px 12px var(--shadow-dark),
+        -4px -4px 10px var(--shadow-light);
 }
 
 .button--ghost {
-    background: var(--surface);
+    background: var(--bg);
     color: var(--text);
-    border-color: var(--line-strong);
+    border-color: transparent;
+    border-radius: 14px;
     box-shadow: var(--shadow-raised);
 }
 
@@ -285,15 +287,15 @@ h3 {
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .button--primary:hover,
-    .button--ghost:hover {
+    .button--primary:hover {
         transform: translateY(-2px);
-        box-shadow: var(--shadow-raised-hover);
-        color: var(--ink);
+        background: var(--accent-strong);
+        color: #fff;
     }
 
     .button--ghost:hover {
-        color: var(--text);
+        transform: translateY(-2px);
+        color: var(--accent);
     }
 
     .button--quiet:hover {
@@ -327,9 +329,10 @@ h3 {
 }
 
 .nav.is-scrolled {
-    background: rgba(20, 22, 26, 0.96);
-    border-bottom: 1px solid var(--line);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+    background: var(--bg);
+    box-shadow:
+        0 8px 16px var(--shadow-dark),
+        0 -2px 6px var(--shadow-light);
 }
 
 .brand {
@@ -348,7 +351,7 @@ h3 {
     height: 2.5rem;
     border-radius: 12px;
     background: var(--surface);
-    border: 1px solid var(--line);
+    border: 0;
     box-shadow: var(--shadow-raised);
     font-family: var(--font-mono);
     font-size: 0.72rem;
@@ -382,13 +385,15 @@ h3 {
 }
 
 .nav__list a[aria-current="true"] {
-    color: var(--accent-strong);
+    color: var(--accent);
+    background: var(--accent-soft);
+    box-shadow: var(--shadow-press);
 }
 
 .nav__resume {
     margin-left: 0.35rem;
-    border: 1px solid var(--line-strong);
-    box-shadow: var(--shadow-press);
+    background: var(--bg);
+    box-shadow: var(--shadow-raised);
 }
 
 .nav-toggle,
@@ -444,11 +449,9 @@ h3 {
     position: relative;
     min-height: 520px;
     border-radius: 28px;
-    background:
-        linear-gradient(160deg, rgba(255, 255, 255, 0.05), transparent 36%),
-        var(--surface-inset);
-    border: 1px solid var(--line);
-    box-shadow: var(--shadow-inset), var(--shadow-raised);
+    background: var(--bg);
+    border: 0;
+    box-shadow: var(--shadow-raised);
     overflow: hidden;
     perspective: 900px;
 }
@@ -532,10 +535,8 @@ h3 {
     margin: 0;
     padding: 0.7rem;
     border-radius: var(--radius-lg);
-    background:
-        linear-gradient(165deg, rgba(255, 255, 255, 0.05), transparent 40%),
-        var(--surface);
-    border: 1px solid var(--line);
+    background: var(--bg);
+    border: 0;
     box-shadow: var(--shadow-raised);
 }
 
@@ -563,9 +564,9 @@ h3 {
 .fact-row li {
     padding: 0.9rem 0.85rem;
     border-radius: var(--radius-md);
-    background: var(--surface-inset);
-    box-shadow: var(--shadow-press);
-    border: 1px solid rgba(0, 0, 0, 0.35);
+    background: var(--bg);
+    box-shadow: var(--shadow-raised);
+    border: 0;
 }
 
 .fact-row span {
@@ -595,9 +596,9 @@ h3 {
 .capability {
     padding: 1.25rem 1.15rem 1.2rem;
     border-radius: var(--radius-md);
-    background: var(--surface-inset);
-    border: 1px solid rgba(0, 0, 0, 0.28);
-    box-shadow: var(--shadow-press);
+    background: var(--bg);
+    border: 0;
+    box-shadow: var(--shadow-raised);
 }
 
 .capability p {
@@ -624,10 +625,8 @@ h3 {
     flex-direction: column;
     perspective: 900px;
     border-radius: var(--radius-lg);
-    background:
-        linear-gradient(165deg, rgba(255, 255, 255, 0.04), transparent 40%),
-        var(--surface);
-    border: 1px solid var(--line);
+    background: var(--bg);
+    border: 0;
     box-shadow: var(--shadow-raised);
     overflow: hidden;
     transition: box-shadow 0.3s var(--ease), transform 0.3s var(--ease), border-color 0.3s var(--ease);
@@ -642,8 +641,8 @@ h3 {
     position: relative;
     min-height: 210px;
     background:
-        radial-gradient(420px 180px at 20% 0%, rgba(215, 176, 122, 0.08), transparent 60%),
-        var(--surface-inset);
+        radial-gradient(420px 180px at 20% 0%, var(--accent-soft), transparent 60%),
+        var(--bg);
     box-shadow: var(--shadow-inset);
     color: var(--text);
     transition: transform 0.35s var(--ease);
@@ -741,10 +740,12 @@ h3 {
 }
 
 .tags li {
-    padding: 0.28rem 0.55rem;
-    border-radius: 8px;
-    background: var(--surface-inset);
-    box-shadow: var(--shadow-press);
+    padding: 0.32rem 0.6rem;
+    border-radius: 10px;
+    background: var(--bg);
+    box-shadow:
+        3px 3px 6px var(--shadow-dark),
+        -3px -3px 6px var(--shadow-light);
     color: var(--text-soft);
     font-size: 0.78rem;
     letter-spacing: 0.01em;
@@ -753,7 +754,6 @@ h3 {
 @media (hover: hover) and (pointer: fine) {
     .project:hover {
         transform: translateY(-4px);
-        border-color: rgba(215, 176, 122, 0.35);
         box-shadow: var(--shadow-raised-hover);
     }
 
@@ -852,7 +852,9 @@ h3 {
     padding: 0.35rem 0.6rem;
     border-radius: 8px;
     background: var(--bg);
-    box-shadow: var(--shadow-press);
+    box-shadow:
+        3px 3px 6px var(--shadow-dark),
+        -3px -3px 6px var(--shadow-light);
     color: var(--text);
     font-size: 0.9rem;
 }
@@ -927,8 +929,8 @@ h3 {
     width: 100%;
     padding: 0.85rem 0.9rem;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    background: var(--surface-inset);
+    border: 0;
+    background: var(--bg);
     box-shadow: var(--shadow-inset);
     color: var(--text);
     resize: vertical;
@@ -974,8 +976,8 @@ h3 {
     min-height: 44px;
     padding: 0.65rem 0.9rem;
     border-radius: 999px;
-    border: 1px solid var(--line);
-    background: var(--surface);
+    border: 0;
+    background: var(--bg);
     color: var(--text);
     box-shadow: var(--shadow-raised);
     cursor: pointer;
@@ -1034,12 +1036,12 @@ h3 {
 @media (max-width: 860px) {
     :root {
         --shadow-raised:
-            6px 7px 14px rgba(0, 0, 0, 0.38),
-            -3px -3px 8px rgba(255, 255, 255, 0.03);
+            5px 5px 10px var(--shadow-dark),
+            -4px -4px 8px var(--shadow-light);
         --shadow-raised-hover: var(--shadow-raised);
         --shadow-inset:
-            inset 3px 3px 8px rgba(0, 0, 0, 0.4),
-            inset -2px -2px 5px rgba(255, 255, 255, 0.03);
+            inset 3px 3px 6px var(--shadow-dark),
+            inset -2px -2px 5px var(--shadow-light);
     }
 
     .container,
@@ -1061,8 +1063,8 @@ h3 {
         width: 48px;
         height: 48px;
         border-radius: 14px;
-        border: 1px solid var(--line);
-        background: var(--surface);
+        border: 0;
+        background: var(--bg);
         box-shadow: var(--shadow-raised);
         cursor: pointer;
         position: relative;
@@ -1106,11 +1108,9 @@ h3 {
         width: min(100%, 22rem);
         height: 100dvh;
         padding: 6.2rem 1.5rem 2rem;
-        background:
-            linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 28%),
-            #171b21;
-        border-left: 1px solid var(--line);
-        box-shadow: -18px 0 40px rgba(0, 0, 0, 0.35);
+        background: var(--bg);
+        border-left: 0;
+        box-shadow: -12px 0 24px rgba(184, 192, 204, 0.85);
         transform: translateX(104%);
         transition: transform 0.45s var(--ease);
     }
@@ -1155,7 +1155,7 @@ h3 {
         inset: 0;
         z-index: 35;
         border: 0;
-        background: rgba(0, 0, 0, 0.48);
+        background: rgba(45, 55, 72, 0.28);
         cursor: pointer;
     }
 

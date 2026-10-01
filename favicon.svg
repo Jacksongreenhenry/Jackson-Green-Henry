@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Jackson Green Henry">
-  <rect width="32" height="32" rx="8" fill="#14161a"/>
-  <rect x="1.25" y="1.25" width="29.5" height="29.5" rx="7" fill="none" stroke="#d7b07a" stroke-width="1.25"/>
-  <path d="M9 9.5h7.2c2.4 0 3.8 1.35 3.8 3.35S18.6 16.2 16.2 16.2H9V9.5zm0 6.7h8.1c2.7 0 4.4 1.45 4.4 3.7 0 2.35-1.8 3.85-4.7 3.85H9v-7.55z" fill="#f4f1ea"/>
+  <rect width="32" height="32" rx="8" fill="#e8eef5"/>
+  <rect x="1.25" y="1.25" width="29.5" height="29.5" rx="7" fill="none" stroke="#c4123a" stroke-width="1.25"/>
+  <path d="M9 9.5h7.2c2.4 0 3.8 1.35 3.8 3.35S18.6 16.2 16.2 16.2H9V9.5zm0 6.7h8.1c2.7 0 4.4 1.45 4.4 3.7 0 2.35-1.8 3.85-4.7 3.85H9v-7.55z" fill="#c4123a"/>
 </svg>
