@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jackson Green Henry, Software Engineer</title>
-    <meta name="description" content="Jackson Green Henry is a software engineer and product builder in Cameroon. He designs frontend systems, SaaS products, and AI interfaces, and leads engineering at JACKBASE TECH.">
+    <meta name="description" content="Jackson Green Henry is a software engineer and technology builder in Cameroon. He builds software products, AI systems, and digital experiences, and leads engineering at JACKBASE TECH.">
     <meta name="theme-color" content="#e8eef5">
     <meta name="author" content="Jackson Green Henry">
     <link rel="canonical" href="https://jacksongreenhenry.netlify.app/">
@@ -33,21 +33,31 @@
             "@type": "Country",
             "name": "Cameroon"
         },
-        "worksFor": {
-            "@type": "Organization",
-            "name": "JACKBASE TECH"
-        },
+        "worksFor": [
+            {
+                "@type": "Organization",
+                "name": "JACKBASE TECH",
+                "url": "https://jackbasetech.com"
+            },
+            {
+                "@type": "Organization",
+                "name": "D-CAT Center",
+                "url": "https://dcatcenter.com/"
+            }
+        ],
         "alumniOf": {
             "@type": "CollegeOrUniversity",
             "name": "National Polytechnic University Institute"
         },
         "knowsAbout": [
-            "Frontend engineering",
-            "React",
-            "SaaS products",
+            "Software engineering",
+            "Product development",
             "Artificial intelligence",
             "Computer vision",
-            "Human-computer interaction"
+            "SaaS platforms",
+            "Mobile development",
+            "Human-computer interaction",
+            "Technical training"
         ]
     }
     </script>
@@ -70,7 +80,7 @@
                     <li style="--i:3"><a href="#experience" data-nav>Experience</a></li>
                     <li style="--i:4"><a href="#skills" data-nav>Skills</a></li>
                     <li style="--i:5"><a href="#contact" data-nav>Contact</a></li>
-                    <li style="--i:6"><a class="nav__resume" href="https://drive.google.com/file/d/19FgOf1lUYipUaJwstQNrJPaD0DfYoAmj/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                    <li style="--i:6"><a class="nav__resume" href="cv.pdf" download="Jackson-Green-Henry-CV.pdf">Resume</a></li>
                 </ul>
             </nav>
 
@@ -86,21 +96,33 @@
         <section class="hero" id="home" aria-labelledby="hero-title">
             <div class="container hero__grid">
                 <div class="hero__copy">
-                    <p class="eyebrow">Cameroon · JACKBASE TECH</p>
+                    <p class="eyebrow">Cameroon</p>
                     <h1 id="hero-title">
                         <span>Jackson</span>
                         <span>Green Henry</span>
                     </h1>
                     <p class="hero__roles">
                         <span>Software Engineer</span>
-                        <span>Frontend Developer</span>
-                        <span>AI &amp; Creative Technologist</span>
+                        <span>Full Stack Developer</span>
+                        <span>Technology Builder</span>
+                        <span>AI &amp; Product Engineer</span>
                     </p>
-                    <p class="hero__statement">I build digital products where engineering, intelligent systems, and thoughtful interfaces meet.</p>
+                    <p class="hero__statement">I build software products, intelligent systems, and digital experiences that turn an idea into working technology.</p>
+                    <p class="hero__support">The work runs across SaaS, AI, mobile, computer vision, and experiments in how a person uses a machine.</p>
+                    <ul class="hero__posts">
+                        <li>
+                            <span>Founder &amp; Lead Engineer</span>
+                            <a href="https://jackbasetech.com" target="_blank" rel="noopener noreferrer">JACKBASE TECH</a>
+                        </li>
+                        <li>
+                            <span>Tech Engineer</span>
+                            <a href="https://dcatcenter.com/" target="_blank" rel="noopener noreferrer">D-CAT Center</a>
+                        </li>
+                    </ul>
                     <div class="hero__actions">
-                        <a class="button button--primary" href="#work">View My Work</a>
-                        <a class="button button--ghost" href="#contact">Let's Work Together</a>
-                        <a class="button button--quiet" href="https://drive.google.com/file/d/19FgOf1lUYipUaJwstQNrJPaD0DfYoAmj/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a>
+                        <a class="button button--primary" href="#work">Explore My Work</a>
+                        <a class="button button--ghost" href="#about">About Me</a>
+                        <a class="button button--quiet" href="cv.pdf" download="Jackson-Green-Henry-CV.pdf">Download CV</a>
                     </div>
                 </div>
 
@@ -140,22 +162,63 @@
             <div class="container about">
                 <div class="section__intro">
                     <p class="eyebrow">01 · About</p>
-                    <h2 id="about-title">A software engineer who ships the product.</h2>
+                    <h2 id="about-title">I build technology, and I teach it.</h2>
                 </div>
                 <div class="about__layout">
                     <figure class="portrait">
                         <img src="images/ej.jpg" width="480" height="640" alt="Portrait of Jackson Green Henry">
                     </figure>
                     <div class="about__copy">
-                        <div class="furrow about__text">
-                            <p>I am a software engineer and product builder based in Cameroon. I founded JACKBASE TECH, and I lead the engineering there, taking ideas from a rough concept through interface, systems, and deployment.</p>
-                            <p>The products span school platforms, marketplaces, finance tools, mobile apps, and AI. Some of that AI is an assistant working on structured data inside a real system. Some of it is computer vision trained for a specific task. Some of it is an experiment in how a person might control software with a hand, a face, or a voice.</p>
-                            <p>Frontend is a large part of the craft: component structure, responsive interfaces, and interaction that feels considered. I also stay with the rest of the stack when the product needs it: APIs, data, authentication, and the path to production. I design, engineer, debug, and keep evolving software that people can actually use.</p>
+                        <div class="about__beat">
+                            <h3>The work</h3>
+                            <div class="furrow">
+                                <p>I am a software engineer and technology builder from Cameroon. I take an idea from a rough concept through design, systems, and a product someone can use. The work now sits in software, AI, mobile applications, computer vision, and the places where a person meets a machine.</p>
+                                <p>I founded JACKBASE TECH and lead the engineering there. That is where I develop products and try ideas that are not finished yet. I also work as Tech Engineer at <a href="https://dcatcenter.com/" target="_blank" rel="noopener noreferrer">D-CAT Center</a>, supporting the technical side of the hub, and I built the center’s website.</p>
+                            </div>
                         </div>
+
+                        <div class="about__beat">
+                            <h3>Where it started</h3>
+                            <div class="furrow">
+                                <p>The first work was close to the machines. Hardware needed repair, laboratories had to stay running, and I was often the person explaining the lesson. I maintained computers, taught computer science, and trained people in technical skills, including hands-on IoT and AI.</p>
+                                <p>I taught and supported machines at Progressive Comprehensive High School, at LORDa, and at Firm Foundation College of Art Science and Technology. From February 2021 to May 2023 I taught hands-on IoT and AI at Central University Institute in Bamenda. From 2021 to 2024 I also gave international online training in artificial intelligence, and I have mentored young people on STEM projects. Serving as an educational prefect was an early lesson in being responsible for other people.</p>
+                                <p>I studied computer software engineering at the National Polytechnic University Institute in Bamenda, first through an HND and then a bachelor’s degree. That study was the foundation. Hardware, circuit boards for AI projects, IoT, and robotics remain one layer of the background.</p>
+                            </div>
+                        </div>
+
+                        <div class="about__beat">
+                            <h3>Products</h3>
+                            <div class="furrow">
+                                <p>Software engineering became the center of the practice. Smaller applications grew into products with accounts, data, messaging, and a path onto a server. At JACKBASE TECH that includes SaaS, web and mobile applications, automation, and computer vision. The interface is one part of the job. The rest is the API, the data, the deployment, and the problem the product has to solve.</p>
+                                <p>Cipher SMS shows the shift. It began as a school tool and became an online platform for students, teachers, attendance, fees, and records. Cipher AI lives inside it: an assistant that reads intent, chooses a capability, checks structured data, and helps carry out a school operation.</p>
+                                <p>Other products cover other jobs. Camsermar connects customers with service professionals. STUDCOM is a companion app for students. FinGer handles finance. Manka'a has to work for a restaurant, a customer, and a driver together. The longer accounts belong with the work. The shared habit is to look at a real workflow and build the system around it.</p>
+                            </div>
+                        </div>
+
+                        <blockquote class="about__note">
+                            <p>The useful version of AI, for me, is an assistant that can do a job inside a product.</p>
+                        </blockquote>
+
+                        <div class="about__beat">
+                            <h3>Intelligence and interaction</h3>
+                            <div class="furrow">
+                                <p>AI, machine learning, and computer vision are now a large part of the practice. VisionDX is model work: preparing data, training, and exporting a malaria-detection model, with tools such as TensorFlow, Keras, EfficientNet, and ONNX. IsoID uses fingerprint and facial recognition for attendance. I also experiment with local models. The interest is intelligence that has a job inside a system.</p>
+                                <p>Lola is more exploratory: a personal AI assistant for voice, local models, and computer vision. With a camera I have mapped hand and face movement onto a music player, changing tracks, volume, position in a song, and playlists by gesture. Air Piano turns finger movement into musical input. It is hands-on experimentation in how a person might operate software directly.</p>
+                            </div>
+                        </div>
+
+                        <div class="about__beat">
+                            <h3>Teaching, and D-CAT</h3>
+                            <div class="furrow">
+                                <p>Founding JACKBASE TECH made the ownership plain. I decide what to build, I engineer it, and I stay with it when it fails. Teaching had already asked for the same kind of attention: a class that has to understand the idea, and a machine that has to work the next morning.</p>
+                                <p>At D-CAT Center I am the Tech Engineer. I support the Website Design and Development track and the basic Mobile App Development track, both meant to prepare learners for real client work. The center helps people turn skills into market opportunities. My part is the technology, and the teaching beside it. I am still working where software engineering, AI, product development, and human interaction meet.</p>
+                            </div>
+                        </div>
+
                         <ul class="fact-row">
                             <li><span>Base</span> Cameroon</li>
-                            <li><span>Practice</span> <a href="https://jackbasetech.com" target="_blank" rel="noopener noreferrer">JACKBASE TECH</a></li>
-                            <li><span>Focus</span> Interfaces, products, intelligent systems</li>
+                            <li><span>Company</span> <a href="https://jackbasetech.com" target="_blank" rel="noopener noreferrer">JACKBASE TECH</a></li>
+                            <li><span>Also</span> <a href="https://dcatcenter.com/" target="_blank" rel="noopener noreferrer">D-CAT Center</a></li>
                         </ul>
                     </div>
                 </div>
@@ -207,13 +270,16 @@
                 <div class="section__intro section__intro--split">
                     <div>
                         <p class="eyebrow">03 · Work</p>
-                        <h2 id="work-title">Selected work</h2>
+                        <h2 id="work-title">Products and systems I have built</h2>
                     </div>
-                    <p class="lede furrow">Products and experiments across SaaS, marketplaces, mobile, computer vision, and human-computer interaction.</p>
+                    <div class="lede furrow">
+                        <p>From production software to experimental interfaces, I build across the layers that turn an idea into something people can use.</p>
+                        <p>The set includes production software, SaaS, AI systems, mobile applications, computer vision, biometric systems, marketplaces, and experimental interfaces.</p>
+                    </div>
                 </div>
 
                 <div class="work-list">
-                    <article class="project project--feature" id="cipher-sms" data-project>
+                    <article class="project project--feature" id="cipher-sms" data-project data-status="production" data-case-study="">
                         <div class="project__preview" data-tilt-target aria-hidden="true">
                             <svg viewBox="0 0 640 420">
                                 <rect x="36" y="40" width="150" height="340" rx="16" fill="none" stroke="currentColor" stroke-opacity="0.2"/>
@@ -235,39 +301,44 @@
                             <span class="project__index">01</span>
                         </div>
                         <div class="project__body">
-                            <p class="project__category">SaaS · AI</p>
+                            <p class="project__category">SaaS · AI · Education Technology</p>
                             <h3>Cipher SMS</h3>
-                            <div class="furrow">
-                                <p>A school management platform that grew from an offline desktop application into a multi-tenant SaaS product. It handles students, teachers, classes, attendance, fees, receipts, academic records, reports, messaging, and subscriptions.</p>
-                                <p>Cipher AI works inside that system. It is an assistant that can interpret intent, choose a capability, read structured data, check the result, and help carry out school operations.</p>
-                            </div>
-                            <a class="button button--ghost project__link" href="https://ciphersmsonline.com" target="_blank" rel="noopener noreferrer">ciphersmsonline.com</a>
+                            <p class="furrow">A school management platform that grew from an offline desktop application into an online SaaS product. Students, teachers, classes, attendance, fees, receipts, academic records, reports, messaging, subscriptions, and day-to-day operations sit in one system.</p>
                             <dl class="project__facts">
                                 <div>
                                     <dt>Role</dt>
-                                    <dd>Design and engineering</dd>
+                                    <dd>Founder, lead engineer, product engineering</dd>
                                 </div>
                                 <div>
-                                    <dt>Problem</dt>
-                                    <dd>School operations needed one product for records, money, communication, and administration.</dd>
+                                    <dt>Status</dt>
+                                    <dd>Production product</dd>
                                 </div>
                             </dl>
+                            <a class="button button--ghost project__link" href="https://ciphersmsonline.com" target="_blank" rel="noopener noreferrer">ciphersmsonline.com</a>
                             <ul class="tags" aria-label="Technologies">
                                 <li>React</li>
                                 <li>Vite</li>
                                 <li>Flask</li>
                                 <li>PostgreSQL</li>
                                 <li>Neon</li>
-                                <li>Firebase Auth</li>
+                                <li>Firebase Authentication</li>
                                 <li>Vercel</li>
                                 <li>Fly.io</li>
-                                <li>WhatsApp</li>
+                                <li>WhatsApp Cloud API</li>
                             </ul>
+                            <details class="project__more">
+                                <summary>Approach</summary>
+                                <div class="furrow">
+                                    <p>School administration needed one product for records, money, communication, and operations, not a set of separate tools.</p>
+                                    <p>Cipher AI is built into that system. It works on intent, parameter normalization, capability selection, structured data retrieval, validation, and carrying out a task. It is an assistant that can act on school data, not a chat window placed beside the product.</p>
+                                    <p>The build covers the interface, the API, the database, authentication, cloud deployment, and the school workflows themselves.</p>
+                                </div>
+                            </details>
                         </div>
                     </article>
 
                     <div class="work-grid">
-                        <article class="project" id="camsermar" data-project>
+                        <article class="project" id="camsermar" data-project data-status="testing" data-case-study="">
                             <div class="project__preview" data-tilt-target aria-hidden="true">
                                 <svg viewBox="0 0 640 360">
                                     <rect x="48" y="70" width="230" height="220" rx="18" fill="none" stroke="var(--accent)" stroke-opacity="0.65"/>
@@ -285,30 +356,37 @@
                                 <span class="project__index">02</span>
                             </div>
                             <div class="project__body">
-                                <p class="project__category">Marketplace</p>
+                                <p class="project__category">Marketplace · Mobile · Product Engineering</p>
                                 <h3>Camsermar</h3>
-                                <p class="furrow">A marketplace for the Cameroonian market that connects customers with service professionals: discovery, listings, bookings, messaging, reviews, and accounts on both sides.</p>
+                                <p class="furrow">A marketplace for the Cameroonian market that connects customers with service professionals. Two kinds of accounts share one booking, from the first search through to a finished job.</p>
                                 <dl class="project__facts">
                                     <div>
                                         <dt>Role</dt>
-                                        <dd>Design and engineering</dd>
+                                        <dd>Product design and engineering</dd>
                                     </div>
                                     <div>
-                                        <dt>Problem</dt>
-                                        <dd>People needed a clearer way to find a professional, book, and follow the job through.</dd>
+                                        <dt>Status</dt>
+                                        <dd>Android build in internal testing on Google Play</dd>
                                     </div>
                                 </dl>
-                                <p class="project__status">Android build in internal testing on Google Play.</p>
                                 <ul class="tags" aria-label="Focus">
-                                    <li>Marketplace UX</li>
+                                    <li>Discovery</li>
                                     <li>Bookings</li>
                                     <li>Messaging</li>
+                                    <li>Reviews</li>
                                     <li>Android</li>
                                 </ul>
+                                <details class="project__more">
+                                    <summary>Approach</summary>
+                                    <div class="furrow">
+                                        <p>Finding a professional, booking the work, and following it through needed one product, with listings, media, messaging, reviews, and location-based discovery.</p>
+                                        <p>The complexity is the lifecycle. A customer and a professional have to stay in step as a booking moves, and both accounts have to remain coherent on either side of that job.</p>
+                                    </div>
+                                </details>
                             </div>
                         </article>
 
-                        <article class="project" id="lola" data-project>
+                        <article class="project" id="lola" data-project data-status="experiment" data-case-study="">
                             <div class="project__preview" data-tilt-target aria-hidden="true">
                                 <svg viewBox="0 0 640 360">
                                     <circle cx="320" cy="180" r="78" fill="none" stroke="var(--accent)" stroke-opacity="0.75"/>
@@ -324,30 +402,38 @@
                                 <span class="project__index">03</span>
                             </div>
                             <div class="project__body">
-                                <p class="project__category">Creative Technology</p>
+                                <p class="project__category">AI · Computer Vision · HCI · Creative Technology</p>
                                 <h3>Lola</h3>
-                                <p class="furrow">A personal AI assistant and an experimental platform for voice, local models, computer vision, and gesture. One study mapped hand and facial gestures to a music player. Another, Air Piano, turned finger movement into musical input.</p>
+                                <p class="furrow">A personal AI assistant and an experimental platform for local models, voice, computer vision, and gesture. This is engineering research on the bench, not a commercial product.</p>
                                 <dl class="project__facts">
                                     <div>
                                         <dt>Role</dt>
                                         <dd>Experiment and engineering</dd>
                                     </div>
                                     <div>
-                                        <dt>Problem</dt>
-                                        <dd>Testing whether gesture, voice, and vision can operate software directly.</dd>
+                                        <dt>Status</dt>
+                                        <dd>Experiment</dd>
                                     </div>
                                 </dl>
                                 <ul class="tags" aria-label="Focus">
                                     <li>LLMs</li>
+                                    <li>Local AI</li>
                                     <li>Computer Vision</li>
                                     <li>Gesture</li>
                                     <li>Voice</li>
                                     <li>HCI</li>
                                 </ul>
+                                <details class="project__more">
+                                    <summary>Approach</summary>
+                                    <div class="furrow">
+                                        <p>The question is whether a person can operate software through a more natural interface: voice, a camera, or a hand in frame.</p>
+                                        <p>One study mapped hand and facial gestures onto a music player: a gesture to change the track, a pinch for volume, pointing to move through a song, and gestures for playlists. Air Piano turns tracked finger movement into musical input.</p>
+                                    </div>
+                                </details>
                             </div>
                         </article>
 
-                        <article class="project" id="visiondx" data-project>
+                        <article class="project" id="visiondx" data-project data-status="model" data-case-study="">
                             <div class="project__preview" data-tilt-target aria-hidden="true">
                                 <svg viewBox="0 0 640 360">
                                     <g fill="none" stroke="currentColor" stroke-opacity="0.22">
@@ -368,17 +454,17 @@
                                 <span class="project__index">04</span>
                             </div>
                             <div class="project__body">
-                                <p class="project__category">Computer Vision</p>
+                                <p class="project__category">Machine Learning · Computer Vision · Healthcare Technology</p>
                                 <h3>VisionDX</h3>
-                                <p class="furrow">Malaria detection work built as an image classifier: dataset preparation, training with EfficientNetB0, and export to ONNX. This is model development, beyond connecting an AI API to a screen.</p>
+                                <p class="furrow">A malaria-detection classifier. The work is the model: dataset preparation, training, evaluation, and export, rather than a screen wired to an outside AI API.</p>
                                 <dl class="project__facts">
                                     <div>
                                         <dt>Role</dt>
                                         <dd>Model development</dd>
                                     </div>
                                     <div>
-                                        <dt>Problem</dt>
-                                        <dd>Classifying malaria-related images with a model trained for that task.</dd>
+                                        <dt>Status</dt>
+                                        <dd>Model development</dd>
                                     </div>
                                 </dl>
                                 <ul class="tags" aria-label="Technologies">
@@ -387,10 +473,17 @@
                                     <li>EfficientNetB0</li>
                                     <li>ONNX</li>
                                 </ul>
+                                <details class="project__more">
+                                    <summary>Approach</summary>
+                                    <div class="furrow">
+                                        <p>The task was image classification for malaria-related images. I prepared the dataset, trained with EfficientNetB0 in TensorFlow and Keras, evaluated the model, and exported it to ONNX.</p>
+                                        <p>What this demonstrates is a trained classifier for that task. It is not a clinical claim about diagnosis.</p>
+                                    </div>
+                                </details>
                             </div>
                         </article>
 
-                        <article class="project" id="isoid" data-project>
+                        <article class="project" id="isoid" data-project data-status="system" data-case-study="">
                             <div class="project__preview" data-tilt-target aria-hidden="true">
                                 <svg viewBox="0 0 640 360">
                                     <ellipse cx="230" cy="170" rx="70" ry="88" fill="none" stroke="var(--accent)" stroke-opacity="0.75"/>
@@ -403,17 +496,17 @@
                                 <span class="project__index">05</span>
                             </div>
                             <div class="project__body">
-                                <p class="project__category">Biometrics</p>
+                                <p class="project__category">Biometrics · Computer Vision · Attendance</p>
                                 <h3>IsoID</h3>
-                                <p class="furrow">An attendance system built around fingerprint and facial recognition, with records, charts, tables, and AI-assisted interaction for reading the data.</p>
+                                <p class="furrow">An attendance system that identifies people by fingerprint and face, then makes the records readable through charts, tables, and AI-assisted interaction.</p>
                                 <dl class="project__facts">
                                     <div>
                                         <dt>Role</dt>
                                         <dd>Design and engineering</dd>
                                     </div>
                                     <div>
-                                        <dt>Problem</dt>
-                                        <dd>Employee attendance needed reliable biometric identification and a clear way to review it.</dd>
+                                        <dt>Status</dt>
+                                        <dd>Built system</dd>
                                     </div>
                                 </dl>
                                 <ul class="tags" aria-label="Focus">
@@ -422,10 +515,17 @@
                                     <li>Attendance</li>
                                     <li>Data Analysis</li>
                                 </ul>
+                                <details class="project__more">
+                                    <summary>Approach</summary>
+                                    <div class="furrow">
+                                        <p>Attendance needed identification people could trust, and a clear way to review what the system recorded.</p>
+                                        <p>The build crosses biometric capture, attendance data, and the interface used to read it. Hardware-adjacent identification, software, and analysis are one job here.</p>
+                                    </div>
+                                </details>
                             </div>
                         </article>
 
-                        <article class="project" id="studcom" data-project>
+                        <article class="project" id="studcom" data-project data-status="production" data-case-study="">
                             <div class="project__preview" data-tilt-target aria-hidden="true">
                                 <svg viewBox="0 0 640 360">
                                     <rect x="230" y="36" width="180" height="288" rx="28" fill="none" stroke="var(--accent)" stroke-opacity="0.75"/>
@@ -438,29 +538,35 @@
                                 <span class="project__index">06</span>
                             </div>
                             <div class="project__body">
-                                <p class="project__category">Mobile</p>
+                                <p class="project__category">Mobile · Education Technology</p>
                                 <h3>STUDCOM</h3>
-                                <p class="furrow">A student's companion mobile application, shaped around study needs and a straightforward mobile interface.</p>
-                                <a class="button button--ghost project__link" href="https://studcom.net" target="_blank" rel="noopener noreferrer">studcom.net</a>
+                                <p class="furrow">A student's companion mobile application, built around study and a clear mobile interface.</p>
                                 <dl class="project__facts">
                                     <div>
                                         <dt>Role</dt>
                                         <dd>Product design and engineering</dd>
                                     </div>
                                     <div>
-                                        <dt>Problem</dt>
-                                        <dd>Students needed a companion app built around daily study, with a clear mobile UX.</dd>
+                                        <dt>Status</dt>
+                                        <dd>Mobile product</dd>
                                     </div>
                                 </dl>
+                                <a class="button button--ghost project__link" href="https://studcom.net" target="_blank" rel="noopener noreferrer">studcom.net</a>
                                 <ul class="tags" aria-label="Focus">
                                     <li>Mobile</li>
                                     <li>Education</li>
                                     <li>Product Design</li>
                                 </ul>
+                                <details class="project__more">
+                                    <summary>Approach</summary>
+                                    <div class="furrow">
+                                        <p>Students needed a companion built around daily study, with a mobile interface that stays clear.</p>
+                                    </div>
+                                </details>
                             </div>
                         </article>
 
-                        <article class="project" id="mankaa" data-project>
+                        <article class="project" id="mankaa" data-project data-status="development" data-case-study="">
                             <div class="project__preview" data-tilt-target aria-hidden="true">
                                 <svg viewBox="0 0 640 360">
                                     <circle cx="140" cy="180" r="36" fill="none" stroke="var(--accent)"/>
@@ -476,30 +582,37 @@
                                 <span class="project__index">07</span>
                             </div>
                             <div class="project__body">
-                                <p class="project__category">Mobile · Logistics</p>
+                                <p class="project__category">Mobile · Logistics · Product Engineering</p>
                                 <h3>Manka'a</h3>
-                                <p class="furrow">A restaurant and delivery ecosystem for restaurants, customers, and drivers: discovery, ordering, pickup, delivery, live driver tracking, and QR-based delivery verification.</p>
+                                <p class="furrow">A restaurant and delivery system with three roles in one flow: the restaurant, the customer, and the driver.</p>
                                 <dl class="project__facts">
                                     <div>
                                         <dt>Role</dt>
                                         <dd>Design and engineering</dd>
                                     </div>
                                     <div>
-                                        <dt>Problem</dt>
-                                        <dd>Food ordering needed one flow across the restaurant, the customer, and the driver.</dd>
+                                        <dt>Status</dt>
+                                        <dd>Android application in development with Kotlin</dd>
                                     </div>
                                 </dl>
-                                <p class="project__status">Android application in development with Kotlin.</p>
                                 <ul class="tags" aria-label="Technologies">
                                     <li>Kotlin</li>
                                     <li>Android</li>
                                     <li>Delivery</li>
+                                    <li>Location</li>
                                     <li>QR Verification</li>
                                 </ul>
+                                <details class="project__more">
+                                    <summary>Approach</summary>
+                                    <div class="furrow">
+                                        <p>Ordering food had to work as one system for the restaurant, the customer, and the driver, from discovery through pickup or delivery.</p>
+                                        <p>The flow includes restaurant discovery, ordering, pickup, delivery, location, live driver tracking, and QR-based delivery verification. The design problem is keeping that lifecycle true for all three people.</p>
+                                    </div>
+                                </details>
                             </div>
                         </article>
 
-                        <article class="project" id="finger" data-project>
+                        <article class="project" id="finger" data-project data-status="production" data-case-study="">
                             <div class="project__preview" data-tilt-target aria-hidden="true">
                                 <svg viewBox="0 0 640 360">
                                     <rect x="48" y="48" width="544" height="264" rx="18" fill="none" stroke="currentColor" stroke-opacity="0.18"/>
@@ -515,28 +628,36 @@
                                 <span class="project__index">08</span>
                             </div>
                             <div class="project__body">
-                                <p class="project__category">SaaS</p>
+                                <p class="project__category">SaaS · Finance · Data</p>
                                 <h3>FinGer</h3>
-                                <p class="furrow">A finance-management SaaS product with dashboard-heavy screens, built as a modern React application for reading and working with financial information.</p>
+                                <p class="furrow">A finance-management SaaS product. The screens are dashboards for reading and working with financial information.</p>
                                 <dl class="project__facts">
                                     <div>
                                         <dt>Role</dt>
-                                        <dd>Design and engineering</dd>
+                                        <dd>Product engineering</dd>
                                     </div>
                                     <div>
-                                        <dt>Problem</dt>
-                                        <dd>Financial management needed a clear interface for dense operational data.</dd>
+                                        <dt>Status</dt>
+                                        <dd>SaaS product</dd>
                                     </div>
                                 </dl>
                                 <ul class="tags" aria-label="Technologies">
                                     <li>React</li>
                                     <li>SaaS</li>
                                     <li>Dashboards</li>
+                                    <li>Finance</li>
                                 </ul>
+                                <details class="project__more">
+                                    <summary>Approach</summary>
+                                    <div class="furrow">
+                                        <p>Financial work produces dense operational data. The product has to make that data readable and usable, not simply store it.</p>
+                                        <p>The engineering focus is the SaaS shell, the financial workflows, and dashboard interfaces built to carry that density.</p>
+                                    </div>
+                                </details>
                             </div>
                         </article>
 
-                        <article class="project" id="v-universe" data-project>
+                        <article class="project" id="v-universe" data-project data-status="experiment" data-case-study="">
                             <div class="project__preview" data-tilt-target aria-hidden="true">
                                 <svg viewBox="0 0 640 360">
                                     <circle cx="250" cy="180" r="80" fill="none" stroke="var(--accent)" stroke-opacity="0.7"/>
@@ -550,24 +671,30 @@
                                 <span class="project__index">09</span>
                             </div>
                             <div class="project__body">
-                                <p class="project__category">Creative Technology</p>
+                                <p class="project__category">AI · Experimental Technology</p>
                                 <h3>V Universe</h3>
-                                <p class="furrow">An experimental AI application around customizable personalities, linked characters, and group conversation inside a fantasy world.</p>
+                                <p class="furrow">An experiment in customizable AI personalities, linked characters, and group conversation inside a virtual world. It is an exploration, not a business system.</p>
                                 <dl class="project__facts">
                                     <div>
                                         <dt>Role</dt>
                                         <dd>Experiment and engineering</dd>
                                     </div>
                                     <div>
-                                        <dt>Problem</dt>
-                                        <dd>Exploring personalities and multi-character conversation as a product, outside a standard business app.</dd>
+                                        <dt>Status</dt>
+                                        <dd>Experiment</dd>
                                     </div>
                                 </dl>
                                 <ul class="tags" aria-label="Focus">
                                     <li>AI Personalities</li>
                                     <li>Conversation</li>
-                                    <li>Experimental</li>
+                                    <li>Virtual Worlds</li>
                                 </ul>
+                                <details class="project__more">
+                                    <summary>Approach</summary>
+                                    <div class="furrow">
+                                        <p>The interest is interactive AI: personalities that can be shaped, characters that stay linked, and conversation that happens in a group inside a fictional setting.</p>
+                                    </div>
+                                </details>
                             </div>
                         </article>
                     </div>
@@ -579,61 +706,178 @@
             <div class="container">
                 <div class="section__intro">
                     <p class="eyebrow">04 · Experience</p>
-                    <h2 id="experience-title">Where the work has happened</h2>
+                    <h2 id="experience-title">Where those skills were formed</h2>
+                    <p class="lede furrow">The environments, roles, and responsibilities that shaped how I build. Open a role to read the work.</p>
                 </div>
-                <div class="panel record">
-                    <ol class="record__list">
-                        <li class="record__item record__item--current">
-                            <div>
-                                <h3>JACKBASE TECH</h3>
-                                <p class="record__role">Founder · Lead Engineer</p>
-                            </div>
-                            <div>
-                                <p class="furrow">Several years building and leading software products: SaaS, web and mobile applications, AI, automation, and computer vision. I take the work from product direction through implementation.</p>
+                <div class="timeline">
+                    <p class="timeline__mark">Current</p>
+                    <article class="timeline__item timeline__item--current">
+                        <details open>
+                            <summary>
+                                <span class="timeline__when">Current</span>
+                                <span class="timeline__org">JACKBASE TECH</span>
+                                <span class="timeline__role">Founder · Lead Engineer · CEO</span>
+                            </summary>
+                            <div class="furrow">
+                                <p>I founded the company and lead the engineering. The work is software products across web, mobile, SaaS, AI, computer vision, and automation, taken from planning and architecture through design, implementation, testing, deployment, and the next revision.</p>
+                                <p>Cipher SMS, Camsermar, STUDCOM, and FinGer are products. Lola, VisionDX, and V Universe are experiments. IsoID is a built biometric system. Manka'a is still in development. I do not treat every one of them as a commercial release.</p>
                                 <a class="button button--ghost project__link" href="https://jackbasetech.com" target="_blank" rel="noopener noreferrer">jackbasetech.com</a>
                             </div>
-                        </li>
-                        <li class="record__item">
-                            <div>
-                                <h3>Central University Institute</h3>
-                                <p class="record__role">Lecturer</p>
+                        </details>
+                    </article>
+                    <article class="timeline__item timeline__item--current">
+                        <details>
+                            <summary>
+                                <span class="timeline__when">Current</span>
+                                <span class="timeline__org">D-CAT Center</span>
+                                <span class="timeline__role">Tech Engineer</span>
+                            </summary>
+                            <div class="furrow">
+                                <p>I support the technical side of the hub. That includes the Website Design and Development track and the basic Mobile App Development track, which prepare learners for real client work. I also built the D-CAT Center website.</p>
+                                <p>The role connects technology development with practical skills training.</p>
+                                <a class="button button--ghost project__link" href="https://dcatcenter.com/" target="_blank" rel="noopener noreferrer">dcatcenter.com</a>
                             </div>
-                            <p class="furrow">Taught in a university setting.</p>
-                        </li>
-                        <li class="record__item">
-                            <div>
-                                <h3>Progressive Comprehensive High School</h3>
-                                <p class="record__role">IT Technician</p>
+                        </details>
+                    </article>
+                    <p class="timeline__mark">Teaching and technical work</p>
+                    <article class="timeline__item">
+                        <details>
+                            <summary>
+                                <span class="timeline__when">January 2023 onward</span>
+                                <span class="timeline__org">Progressive Comprehensive High School</span>
+                                <span class="timeline__role">IT Technician · Computer Science Teacher</span>
+                            </summary>
+                            <div class="furrow">
+                                <p>At the school in Bamenda I combine computer laboratory support with computer science teaching: the machines in the lab, and the class that has to understand the subject.</p>
                             </div>
-                            <p class="furrow">Computer laboratory support at the school in Mankon, Bamenda.</p>
-                        </li>
-                        <li class="record__item">
-                            <div>
-                                <h3>National Polytechnic University Institute</h3>
-                                <p class="record__role">IT Technician</p>
+                        </details>
+                    </article>
+                    <article class="timeline__item">
+                        <details>
+                            <summary>
+                                <span class="timeline__when">2021 to 2024</span>
+                                <span class="timeline__org">International online training</span>
+                                <span class="timeline__role">Artificial Intelligence Trainer</span>
+                            </summary>
+                            <div class="furrow">
+                                <p>Remote classes in artificial intelligence, taught online from 2021 to 2024.</p>
                             </div>
-                            <p class="furrow">Technical support at the institute.</p>
-                        </li>
-                        <li class="record__item">
-                            <div>
-                                <h3>STEMSEL Foundation Australia</h3>
-                                <p class="record__role">Internship</p>
+                        </details>
+                    </article>
+                    <article class="timeline__item">
+                        <details>
+                            <summary>
+                                <span class="timeline__when">February 2021 to May 2023</span>
+                                <span class="timeline__org">Central University Institute Bamenda</span>
+                                <span class="timeline__role">IoT · AI Instructor</span>
+                            </summary>
+                            <div class="furrow">
+                                <p>Hands-on instruction in IoT and AI. Learners worked with the technologies through practical projects, so the role asked for the technical material and the ability to explain it.</p>
                             </div>
-                            <p class="furrow">Internship with the foundation.</p>
-                        </li>
-                        <li class="record__item">
-                            <div>
-                                <h3>Elabstronics</h3>
-                                <p class="record__role">Internship</p>
+                        </details>
+                    </article>
+                    <article class="timeline__item">
+                        <details>
+                            <summary>
+                                <span class="timeline__when">September 2022 to May 2023</span>
+                                <span class="timeline__org">Firm Foundation College of Art Science and Technology</span>
+                                <span class="timeline__role">Computer Science Teacher</span>
+                            </summary>
+                            <div class="furrow">
+                                <p>Computer science teaching and technical instruction for the students at the college.</p>
                             </div>
-                            <p class="furrow">Internship placement.</p>
-                        </li>
-                    </ol>
-                    <div class="record__education">
-                        <p class="eyebrow">Education</p>
-                        <h3>Bachelor's degree in Software Engineering</h3>
-                        <p class="furrow">National Polytechnic University Institute, Bamenda, 2024</p>
-                    </div>
+                        </details>
+                    </article>
+                    <article class="timeline__item">
+                        <details>
+                            <summary>
+                                <span class="timeline__when">October 2022 to June 2023</span>
+                                <span class="timeline__org">National Polytechnic University Institute</span>
+                                <span class="timeline__role">IT Technician</span>
+                            </summary>
+                            <div class="furrow">
+                                <p>Technical support and IT operations at the institute in Bamenda. This is also where I completed the HND and the bachelor's degree in computer software engineering.</p>
+                            </div>
+                        </details>
+                    </article>
+                    <article class="timeline__item">
+                        <details>
+                            <summary>
+                                <span class="timeline__when">From August 2022</span>
+                                <span class="timeline__org">Blue Pearl Hotel</span>
+                                <span class="timeline__role">IT Technician</span>
+                            </summary>
+                            <div class="furrow">
+                                <p>IT technical support for the hotel, from August 2022.</p>
+                            </div>
+                        </details>
+                    </article>
+                    <article class="timeline__item">
+                        <details>
+                            <summary>
+                                <span class="timeline__when">October 2020 to January 2022</span>
+                                <span class="timeline__org">LORDa</span>
+                                <span class="timeline__role">IT Technician · Computer Knowledge Trainer</span>
+                            </summary>
+                            <div class="furrow">
+                                <p>Day-to-day IT support together with computer-knowledge training: practical assistance, and instruction for the people using the machines.</p>
+                            </div>
+                        </details>
+                    </article>
+                    <p class="timeline__mark">Internships</p>
+                    <article class="timeline__item timeline__item--quiet">
+                        <details>
+                            <summary>
+                                <span class="timeline__when">Internship</span>
+                                <span class="timeline__org">STEMSEL Foundation Australia</span>
+                                <span class="timeline__role">Intern</span>
+                            </summary>
+                            <div class="furrow">
+                                <p>Internship with STEMSEL Foundation Australia.</p>
+                            </div>
+                        </details>
+                    </article>
+                    <article class="timeline__item timeline__item--quiet">
+                        <details>
+                            <summary>
+                                <span class="timeline__when">Internship</span>
+                                <span class="timeline__org">Elabstronics</span>
+                                <span class="timeline__role">Intern</span>
+                            </summary>
+                            <div class="furrow">
+                                <p>Internship with Elabstronics.</p>
+                            </div>
+                        </details>
+                    </article>
+                    <p class="timeline__mark">Earlier responsibility</p>
+                    <article class="timeline__item timeline__item--quiet">
+                        <details>
+                            <summary>
+                                <span class="timeline__when">2019</span>
+                                <span class="timeline__org">Faith Comprehensive College Obili, Yaoundé</span>
+                                <span class="timeline__role">Educational Prefect</span>
+                            </summary>
+                            <div class="furrow">
+                                <p>A student leadership role: communication, organization, and responsibility for other students, years before the engineering work.</p>
+                            </div>
+                        </details>
+                    </article>
+                </div>
+                <div class="record__education">
+                    <p class="eyebrow">Education</p>
+                    <h3>Bachelor's degree in Computer Software Engineering</h3>
+                    <p class="furrow">National Polytechnic University Institute, Bamenda, 2023</p>
+                    <h3>HND in Computer Software Engineering</h3>
+                    <p class="furrow">National Polytechnic University Institute, Bamenda, 2022</p>
+                </div>
+                <div class="early-work">
+                    <h3>Early development</h3>
+                    <p>Smaller applications from before the current products. They are here as the start of the build work, not as flagship projects.</p>
+                    <ul>
+                        <li><span>C# WinForms</span> Stock management system</li>
+                        <li><span>HTML, CSS, JavaScript</span> Food ordering web application</li>
+                        <li><span>School records</span> Computerized report card</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -731,7 +975,7 @@
                         </li>
                         <li>
                             <span>Resume</span>
-                            <a class="button button--ghost" href="https://drive.google.com/file/d/19FgOf1lUYipUaJwstQNrJPaD0DfYoAmj/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a>
+                            <a class="button button--ghost" href="cv.pdf" download="Jackson-Green-Henry-CV.pdf">Download CV</a>
                         </li>
                     </ul>
                 </div>
